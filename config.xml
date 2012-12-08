@@ -24,9 +24,9 @@ android:name="android.permission.CAMERA" />
 <uses-permission
 android:name="android.permission.VIBRATE" />
 <uses-permission
-android:name="android.permission.ACCESS_COARSE_LOCATIO>
+android:name="android.permission.ACCESS_COARSE_LOCATIO/>
 <uses-permission
-android:name="android.permission.ACCESS_FINE_LOCATION">
+android:name="android.permission.ACCESS_FINE_LOCATION"/>
 <uses-permission
 android:name="android.permission.ACCESS_LOCATION_EXTRA>
 <uses-permission
@@ -38,13 +38,13 @@ android:name="android.permission.RECEIVE_SMS" />
 <uses-permission
 android:name="android.permission.RECORD_AUDIO" />
 <uses-permission
-android:name="android.permission.MODIFY_AUDIO_SETTINGS>
+android:name="android.permission.MODIFY_AUDIO_SETTINGS/>
 <uses-permission
 android:name="android.permission.READ_CONTACTS" />
 <uses-permission
 android:name="android.permission.WRITE_CONTACTS" />
 <uses-permission
-android:name="android.permission.WRITE_EXTERNAL_STORAG>
+android:name="android.permission.WRITE_EXTERNAL_STORAG/>
 <uses-permission
 android:name="android.permission.ACCESS_NETWORK_STATE">
 <uses-permission
