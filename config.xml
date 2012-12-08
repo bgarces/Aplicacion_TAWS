@@ -51,4 +51,10 @@ android:name="android.permission.ACCESS_NETWORK_STATE">
 android:name="android.permission.GET_ACCOUNTS" />
 <uses-permission
 android:name="android.permission.BROADCAST_STICKY" />
+<icon src="logo.png" gap:role="default" />
+	<icon src="logo.png" width="96" height="96" />
+	<icon src="logo.png" width="72" height="72" />
+	<icon src="logo.png" width="48" height="48" />
+	<icon src="logo.png" width="36" height="36" />
+
 </widget>
