@@ -1,4 +1,0 @@
-UnitsLab
-========
-
-Web application.

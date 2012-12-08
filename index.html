@@ -43,6 +43,7 @@ $.mobile.hidePageLoadingMsg();
         	<p>
             	En esta aplicación encontraras un conjunto de
                 aplicaciones que te ayudaran en tu vida estudiantil.
+                
                 <br>
                 <br>
                 <br>
@@ -65,6 +66,7 @@ $.mobile.hidePageLoadingMsg();
 
 <div data-role="page" id="principal">
   <div data-role="header">
+  
   	        <div class="ui-grid-a">
             <div class="ui-block-a">
              <img id="logoT" src="imagenes/logo.png" width="15%" height="15%" alt="logo">
@@ -94,6 +96,7 @@ $.mobile.hidePageLoadingMsg();
 </div>
 <div data-role="page" id="pageshedule">
   <div data-role="header">
+  	<a href="#principal" data-transition="slidedown" data-role="button" data-icon="home">Inicio</a>
     <h1>Shedule Viewer</h1>
   </div>
   <div data-role="content">
@@ -110,7 +113,7 @@ $.mobile.hidePageLoadingMsg();
 			Para poder ver tu horario solo tienes que colocar tu usuario y contraseña, luego clickear Ver Horario! y tu horario actual aparecerá.
 			El horario que aparecerá depende de tu actual registro y de la información proporcionada por medio de un servicio web del Centro de Servicios Informáticos (CSI) de la ESPOL.
            </p>
-           <a href="http://www.taws.espol.edu.ec/scheduler/" data-transition="fade" data-role="button" data-icon="forward">Ir a la aplicación</a>
+           <a href="#onlineshedule" data-transition="fade" data-role="button" data-icon="forward">Ir a la aplicación</a>
            
          </div>
          </div>
@@ -121,8 +124,24 @@ $.mobile.hidePageLoadingMsg();
     <h4>TAWS 2013-2014</h4>
   </div>
 </div>
+<div data-role="page" id="onlineshedule">
+  <div data-role="header">
+  <a href="#pageshedule" data-transition="slidedown" data-role="button" data-icon="back">Atrás</a>
+    <h1>Shedule Viewer</h1>
+  </div>
+  <div data-role="content">
+   <iframe id="pageonline" src="http://www.taws.espol.edu.ec/scheduler/">
+ 	<p>Your browser does not support iframes.</p>
+   </iframe>
+  </div>
+  <div data-role="footer">
+    <h4>TAWS 2013-2014</h4>
+  </div>
+</div>
+
 <div data-role="page" id="pageunitlabs">
   <div data-role="header">
+  <a href="#principal" data-transition="slidedown" data-role="button" data-icon="home">Inicio</a>
     <h1>Units Labs</h1>
   </div>
   <div data-role="content">
@@ -130,13 +149,17 @@ $.mobile.hidePageLoadingMsg();
      <div class="ui-block-a">
      	<div data-role="collapsible-set">
          <div data-role="collapsible" data-collapsed="true">
-           <h3>Units Labs</h3>
+           <h3>UnitsLab</h3>
            <p>
-           	<strong>Schedule Viewer</strong> es una adecuación del proyecto final de Desarrollo de Aplicaciones Web, materia dictada en la FIEC y coordinada por MsC. Carmen Vaca.
-			Para poder ver tu horario solo tienes que colocar tu usuario y contraseña, luego clickear Ver Horario! y tu horario actual aparecerá.
-			El horario que aparecerá depende de tu actual registro y de la información proporcionada por medio de un servicio web del Centro de Servicios Informáticos (CSI) de la ESPOL.
+           	<strong>UnitsLab</strong> es una aplicación diseñada para combinar
+            unidades del Sistema Internacional de Medidas,
+            y que así el usuario pueda recordar de mejor manera como se forma las mismas.
+            Consta de dos areas, multiplicación y división, a las cuales las unidades pueden ser
+            arrastradas con el propósitio de formar una nueva.
+            <br>
+            Practica las diferentes combinaciones,y... ¡Disfritula Unitslab!
            </p>
-           <a href="http://www.taws.espol.edu.ec/unitslab/" data-role="button" data-icon="forward">Ir a la aplicación</a>
+           <a href="#onlineunits" data-transition="fade" data-role="button" data-icon="forward">Ir a la aplicación</a>
          </div>
        </div>
       </div>
@@ -149,6 +172,21 @@ $.mobile.hidePageLoadingMsg();
     <h4>TAWS 2013-2014</h4>
   </div>
 </div>
+<div data-role="page" id="onlineunits">
+  <div data-role="header">
+  <a href="#pageunitlabs" data-transition="slidedown" data-role="button" data-icon="back">Atrás</a>
+    <h1>UnitsLab</h1>
+  </div>
+  <div data-role="content">
+  <iframe id="pageonline" src="http://www.taws.espol.edu.ec/unitslab/">
+ 	<p>Your browser does not support iframes.</p>
+   </iframe>
+  </div>
+  <div data-role="footer">
+    <h4>TAWS 2013-2014</h4>
+  </div>
+</div>
+
 
 </body>
 </html>
